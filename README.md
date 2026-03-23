@@ -40,7 +40,8 @@ Une fois le serveur lancé, vous pouvez tester interactivement tous les endpoint
 
    Endpoints Principaux
    
-Méthode	Endpoint	Description
+Méthode/	Endpoint/	Description
+
 POST	/api/articles	Créer un nouvel article 
 GET	/api/articles	Lister tous les articles (ou filtrer) 
 GET	/api/articles/{id}	Récupérer un article par son ID 
