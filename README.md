@@ -43,11 +43,17 @@ Une fois le serveur lancé, vous pouvez tester interactivement tous les endpoint
 Méthode/	Endpoint/	Description
 
 POST	/api/articles	Créer un nouvel article 
+
 GET	/api/articles	Lister tous les articles (ou filtrer) 
+
 GET	/api/articles/{id}	Récupérer un article par son ID 
+
 PUT	/api/articles/{id}	Modifier un article existant 
+
 DELETE	/api/articles/{id}	Supprimer un article 
+
 GET	/api/articles/search	Rechercher par titre ou contenu 
+
 📝 Structure d'un Article
 Chaque article envoyé en JSON doit respecter ce format:
 JSON
@@ -63,8 +69,11 @@ JSON
  
 •	200 OK : Requête réussie.
 •	201 Created : Création réussie de l'article.
+
 •	400 Bad Request : Entrées invalides ou manquantes.
+
 •	404 Not Found : L'article demandé n'existe pas.
+
 •	500 Internal Server Error : Erreur serveur.
 
  Auteur
