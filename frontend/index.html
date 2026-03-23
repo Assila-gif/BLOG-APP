@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mon Blog API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>Mon Blog API</h1>
+  <input type="text" id="search" placeholder="Rechercher..." onkeyup="searchArticle()">
+</div>
+
+<div class="container">
+  
+  <div class="form">
+    <h2>Nouvel Article</h2>
+    <input type="text" id="titre" placeholder="Titre">
+    <input type="text" id="auteur" placeholder="Auteur">
+    <input type="text" id="categorie" placeholder="Catégorie">
+    <textarea id="contenu" placeholder="Contenu"></textarea>
+    <button onclick="addArticle()">Publier</button>
+  </div>
+
+  <div class="articles" id="articles"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
