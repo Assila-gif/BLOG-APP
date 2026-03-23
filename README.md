@@ -6,9 +6,13 @@ Cette API Backend de gestion de blog a été développée dans le cadre du cours
 Technologies Utilisées
 
 •	Langage : Python 3.9+ 
+
 •	Framework : FastAPI 
+
 •	Base de données : SQLite 
+
 •	Documentation : Swagger UI (Auto-généré par FastAPI) 
+
 •	Architecture : Séparation claire entre Routes, Modèles et Schémas 
 
  Installation et Lancement
@@ -16,8 +20,6 @@ Technologies Utilisées
 1. Cloner le projet
 2. 
 Bash https://github.com/Assila-gif/BLOG-APP/ 
-   
-cd votre-repo
 
 3. Créer un environnement virtuel
 4. 
@@ -35,7 +37,9 @@ pip install fastapi uvicorn sqlalchemy
 Bash
 uvicorn main:app --reload
 L'API sera accessible sur https://articlespace.fly.dev/
+
 📖 Documentation de l'API (Swagger)
+
 Une fois le serveur lancé, vous pouvez tester interactivement tous les endpoints à l'adresse suivante : 👉 https://articlespace.fly.dev/docs
 
    Endpoints Principaux
@@ -59,15 +63,20 @@ Chaque article envoyé en JSON doit respecter ce format:
 JSON
 {
   "titre": "Introduction au Python",
+  
   "contenu": "Le contenu de l'article...",
+  
   "auteur": "Nom de l'auteur",
+  
   "categorie": "Développement",
+  
   "tags": ["python", "api", "fastapi"]
 }
 
  Codes de Réponse HTTP utilisés
  
 •	200 OK : Requête réussie.
+
 •	201 Created : Création réussie de l'article.
 
 •	400 Bad Request : Entrées invalides ou manquantes.
