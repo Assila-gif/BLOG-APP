@@ -15,8 +15,8 @@ Technologies Utilisées
  
 1. Cloner le projet
 2. 
-Bash
-git clone https://github.com/votre-utilisateur/votre-repo.git
+Bash https://github.com/Assila-gif/BLOG-APP/ 
+   
 cd votre-repo
 
 3. Créer un environnement virtuel
