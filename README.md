@@ -1,39 +1,45 @@
-                              BLOG API - TAF 1 (INF 222)
-                              
 
-  Cette API Backend de gestion de blog a été développée dans le cadre du cours INF222 - Programmation Web. Elle permet de gérer des articles (CRUD) et a été conçue en suivant un parcours d'apprentissage structuré sur la plateforme CleeRoute.
-                            🚀 TECHNOLOGIE UTILISÉE
-                            
+Blog API - TAF 1 (INF222)
+
+Cette API Backend de gestion de blog a été développée dans le cadre du cours INF222 - Programmation Web. Elle permet de gérer des articles (CRUD) et a été conçue en suivant un parcours d'apprentissage structuré sur la plateforme CleeRoute.
+
+Technologies Utilisées
+
 •	Langage : Python 3.9+ 
 •	Framework : FastAPI 
 •	Base de données : SQLite 
 •	Documentation : Swagger UI (Auto-généré par FastAPI) 
 •	Architecture : Séparation claire entre Routes, Modèles et Schémas 
-🛠️ Installation et Lancement
-                                 1. CLONNER LE PROJET
-                                 
+
+ Installation et Lancement
+ 
+1. Cloner le projet
+2. 
 Bash
 git clone https://github.com/votre-utilisateur/votre-repo.git
 cd votre-repo
-                            2. CREER VOTRE ENVIRONNEMENT VIRTUEL
-                            
+
+3. Créer un environnement virtuel
+4. 
 Bash
 python -m venv venv
 source venv/bin/activate  # Sur Windows: venv\Scripts\activate
-                            3. Installer les dépendances
-                            
+
+5. Installer les dépendances
+6. 
 Bash
 pip install fastapi uvicorn sqlalchemy
-                            4. LANCER Le SERVEUR
-                            
+
+7. Lancer le serveur
+8. 
 Bash
 uvicorn main:app --reload
 L'API sera accessible sur https://articlespace.fly.dev/
-                          📖 DOCUMENTATION DE L’API (SWAGER)
-                          
+📖 Documentation de l'API (Swagger)
 Une fois le serveur lancé, vous pouvez tester interactivement tous les endpoints à l'adresse suivante : 👉 https://articlespace.fly.dev/docs
-                                  🛣️ ENDPOINTS PRINCIPAUX
-                                  
+
+   Endpoints Principaux
+   
 Méthode	Endpoint	Description
 POST	/api/articles	Créer un nouvel article 
 GET	/api/articles	Lister tous les articles (ou filtrer) 
@@ -51,17 +57,20 @@ JSON
   "categorie": "Développement",
   "tags": ["python", "api", "fastapi"]
 }
-                      🚥 Codes de Réponse HTTP utilisés
-                      
+
+ Codes de Réponse HTTP utilisés
+ 
 •	200 OK : Requête réussie.
 •	201 Created : Création réussie de l'article.
 •	400 Bad Request : Entrées invalides ou manquantes.
 •	404 Not Found : L'article demandé n'existe pas.
 •	500 Internal Server Error : Erreur serveur.
-                          👤 Auteur
-                          
+
+ Auteur
+ 
 •	Nom : [ASSILA TAMBA ELIE BRICE]
 •	Matricule : [24G2719]
 •	Filière : [INFORMATIQUE ]
 •	Cours : INF222 - EC1 (Sous la direction de Charles Njiosseu) 
+                  
 
